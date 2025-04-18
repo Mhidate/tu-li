@@ -1,0 +1,16 @@
+#Cara menambahkan tool ke symlink
+1. build file binarynya
+2. Buat symlink ke /usr/local/bin  
+    sudo ln -s ~/go/bin/gobuster /usr/local/bin/gobuster  
+3. Cek apakah berhasil 
+    which gobuster.Jika output /usr/local/bin/gobuster,berati berhasil 
+
+#Cara hapus symlink 
+1. sudo rm /usr/local/bin/gobuster
+
+#Cara cek tool yang sudah ada di symlynk
+1. ls -l /usr/local/bin
+
+
+#Daftar tools di symlink
+1. gobuster
