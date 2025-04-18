@@ -1,0 +1,16 @@
+1.download go di https://go.dev/dl/
+2.Ekstrak ke /usr/local
+  sudo tar -C /usr/local -xzf go1.22.2.linux-amd64.tar.gz
+3.Tambah ke PATH
+  Edit file .bashrc atau .zshrc (tergantung shell kamu)
+
+  nano ~/.bashrc
+  Tambahkan di paling bawah:
+  export PATH=$PATH:/usr/local/go/bin
+  export GOPATH=$HOME/go
+  export PATH=$PATH:$GOPATH/bin
+  Simpan dan keluar (CTRL + X, lalu Y dan Enter).
+4.Aktifkan perubahan PATH
+  source ~/.bashrc
+5.Cek apakah berhasil
+  go version
